@@ -2,6 +2,7 @@ Coding Environment
 > Text Editor => https://code.visualstudio.com/ (Install)
 > NodeJs => https://nodejs.org/en (Install)
 > GitBash =>  https://git-scm.com/downloads (Install)
+> GitHub Link => https://github.com/SangeethaShanmugm (follow)
 
 Github Profile > https://github.com/
 
