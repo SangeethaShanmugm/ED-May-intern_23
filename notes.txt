@@ -1,0 +1,60 @@
+Coding Environment
+> Text Editor => https://code.visualstudio.com/ (Install)
+> NodeJs => https://nodejs.org/en (Install)
+> GitBash =>  https://git-scm.com/downloads (Install)
+
+Github Profile > https://github.com/
+
+I am a software developer. Full stack developer Intern at Edureka. Have knowledge of HTML, CSS, JavaScript, Nodejs, Mongo, Express, React, bootstrap
+I have 2 years of experience in Mainframe technology as a software developer but i want to switch my technology. I am looking for better opportunity.
+
+
+Configure your Git username/email
+------------------------------------
+>>Open the command line.
+>>Set your username: git config --global user.name "FIRST_NAME LAST_NAME"
+>>Set your email address: git config --global user.email "MY_NAME@example.com"
+
+
+Application
+-------------
+
+Zomato (your choice) => 40% marks
+Profile Website -portfolio  => 5% marks
+
+Assignment - 15%
+Task - 15%
+
+class performance - 20%
+
+
+Extension for vs code
+> vscode-icon
+> spellcheck
+> Live-Server
+> tabnine
+> gitlens
+> githistory
+
+
+Frontend - 1(website)
+----------------
+HTML  - raw structure- static
+CSS - look and feel(Design) - static
+Bootstrap - Framework
+Javascript  - dynamic
+
+Frontend - 2(web-apps)
+---------------
+
+React - dynamic
+
+Backend
+-----------
+Node js 
+MongoDB
+
+MERN
+MongoDB | Express | React | Nodejs
+
+HTML => shift + 1 => ! => enter
