@@ -55,7 +55,24 @@ Backend
 Node js 
 MongoDB
 
-MERN
+MERN Full Stack Developer
 MongoDB | Express | React | Nodejs
 
 HTML => shift + 1 => ! => enter
+
+MERN | MEAN | Python | Java
+
+
+Block Level
+-----------------
+> Start with new line
+> Take whole width of screen
+> eg -  div, p, h, section, hr
+
+Inline Level
+---------------
+> Start in the same line
+> Only Take space which is required
+> Eg - span, img, a
+
+Break -6:35
