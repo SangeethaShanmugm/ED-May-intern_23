@@ -93,3 +93,10 @@ body{
 
 3.External CSS - <link> element to link external css file
  <link rel="stylesheet" href="index.css" />
+
+
+ CSS Selector
+ ---------------
+
+ 1. class - group of element = .
+ 2. ID - higher preference - unique element = #
