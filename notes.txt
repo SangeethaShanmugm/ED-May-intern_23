@@ -100,3 +100,13 @@ body{
 
  1. class - group of element = .
  2. ID - higher preference - unique element = #
+
+ Position
+ -----------
+
+ static
+ relative
+ absolute
+ fixed
+ sticky
+ 
