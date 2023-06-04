@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        position: absolute;
+        z-index: -1;
+      }
+      p {
+        top: 50px;
+      }
+      .box1 {
+        position: relative;
+        border: 3px solid red;
+        height: 100px;
+        width: 500px;
+        z-index: 2;
+      }
+      .box2 {
+        position: absolute;
+        border: 3px solid green;
+        height: 87px;
+        width: 300px;
+        background-color: lightblue;
+        z-index: 3;
+        top: 72px;
+      }
+      .box3 {
+        position: absolute;
+        border: 3px solid purple;
+        height: 50px;
+        width: 100px;
+        background-color: lightgray;
+        z-index: 1;
+        left: 300px;
+        top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="box1">Box1</div>
+      <div class="box2">Box2</div>
+      <div class="box3">Box3</div>
+    </div>
+    <br />
+    <br />
+    <h1>This example is Z-Index</h1>
+    <img
+      width="500px"
+      height="300px"
+      src="https://img.freepik.com/free-vector/flat-design-lake-scenery_23-2149161405.jpg?w=2000"
+    />
+    <p>The text is on top of the image and having a z-index</p>
+  </body>
+</html>

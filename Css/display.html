@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span.display1 {
+        color: green;
+        display: block;
+        /* visibility: visible; */
+        width: 800px;
+        height: 80px;
+        padding: 20px;
+        border: 1px solid blue;
+        background-color: antiquewhite;
+      }
+      .display2 {
+        display: inline;
+        background-color: antiquewhite;
+      }
+      span.display3 {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: antiquewhite;
+      }
+      .main-block {
+        width: 800px;
+        height: 300px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: antiquewhite;
+      }
+      .inline-block {
+        display: inline-block;
+        width: 100px;
+        height: 80px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display Block Property</h1>
+    <div>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+      <span class="display1"
+        >Span when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book</span
+      >
+      <span class="display1"
+        >Span when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book</span
+      >
+    </div>
+
+    <h1>Display Inline Property</h1>
+    <div class="display2">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+      <span class="display2"
+        >Span when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book</span
+      >
+      <span class="display2"
+        >Span when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book</span
+      >
+    </div>
+
+    <h1>Display Inline-Block Property</h1>
+    <div class="display3">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+      <span class="display3"
+        >Span when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book</span
+      >
+      <span class="display3"
+        >Span when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book</span
+      >
+    </div>
+
+    <div>
+      <div class="main-block">
+        <div class="inline-block">
+          <p>Inline Block</p>
+        </div>
+
+        <div class="inline-block">
+          <p>Inline Block</p>
+        </div>
+
+        <div class="inline-block">
+          <p>Inline Block</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

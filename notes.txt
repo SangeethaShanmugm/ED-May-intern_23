@@ -110,3 +110,12 @@ body{
  fixed
  sticky
  
+
+ display: none and visibility: hidden difference?
+ -----------------------------------------------------
+
+ display: none  => will not occupy space
+ visibility: hidden => will occupy the space
+
+ display: block - text will be visible 
+ visibility: visible => text will be visible 
