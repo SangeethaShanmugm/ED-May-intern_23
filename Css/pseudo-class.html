@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        background-color: pink;
+        padding: 20px;
+        text-align: center;
+      }
+      div:hover {
+        background-color: green;
+        color: white;
+      }
+      p {
+        /* display: none; */
+        background-color: lightblue;
+        padding: 10px;
+      }
+      h1:hover p {
+        display: block;
+      }
+      input:focus {
+        background-color: aquamarine;
+      }
+      a:link {
+        color: rgb(197, 20, 26);
+      }
+      a:visited {
+        color: green;
+      }
+      a:hover {
+        color: teal;
+      }
+      a:active {
+        color: rgb(247, 204, 11);
+      }
+      p:first-child {
+        color: rgb(226, 43, 89);
+      }
+      p:nth-child(2) {
+        background-color: yellow;
+      }
+      li:nth-child(2) {
+        background-color: red;
+      }
+      :nth-child(2) {
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is nth child 1</p>
+    <div><p>This is nth child 1</p></div>
+    <div>
+      <p>This is nth child 2</p>
+      <p>This is nth child 3</p>
+    </div>
+    <!-- <p>This div change its background color</p> -->
+    <h1>
+      Hover Over me to see the P element
+      <p>Have a Happy Day🥳🥳🥳</p>
+    </h1>
+    <h1>First Child Element</h1>
+    <div>Touch Me!!!!</div>
+    <h1>
+      Hover Over me to see the P element
+      <p>Have a Happy Day🥳🥳🥳</p>
+    </h1>
+    <label>FirstName</label>
+    <input type="text" name="firstname" id="firstname" />
+    <a href="www.google.com" target="_blank">Image</a>
+    <h1>Hello</h1>
+    <h1>Hi</h1>
+    <div>
+      <h2>Hello</h2>
+      <h1>Hi</h1>
+    </div>
+    <ul>
+      <li>Apple</li>
+      <li>Samsung</li>
+      <li>Redmi</li>
+      <li>Realme</li>
+    </ul>
+  </body>
+</html>
