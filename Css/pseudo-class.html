@@ -43,11 +43,20 @@
       p:nth-child(2) {
         background-color: yellow;
       }
+      li {
+        background-color: green;
+      }
       li:nth-child(2) {
         background-color: red;
       }
       :nth-child(2) {
         padding: 50px;
+      }
+      p::after {
+        content: "-with after selector";
+      }
+      p::before {
+        content: "This is before selector example - ";
       }
     </style>
   </head>
