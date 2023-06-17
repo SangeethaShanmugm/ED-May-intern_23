@@ -119,3 +119,8 @@ body{
 
  display: block - text will be visible 
  visibility: visible => text will be visible 
+
+
+ Flex - one dimensional layout - either rows or column
+
+ Grid -  two dimensional layout - both rows or column
