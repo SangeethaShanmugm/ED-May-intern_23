@@ -124,3 +124,17 @@ body{
  Flex - one dimensional layout - either rows or column
 
  Grid -  two dimensional layout - both rows or column
+
+ Bootstrap
+ -------------
+
+ Frontend Framework  - easy and faster
+ Templates - button, form, card, table, image carousels
+
+ Advantages
+ ------------
+
+ Easy to use
+ Responsive
+ Mobile-first approach
+ Browser compatibility
