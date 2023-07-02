@@ -1,0 +1,31 @@
+#header {
+  background-color: tomato;
+  width: 100%;
+  height: 60px;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+#icon {
+  float: left;
+}
+h1 {
+  color: white;
+}
+
+#social {
+  float: right;
+}
+
+.fa-brands {
+  font-size: 50px;
+  color: #192f60;
+}
+
+#search {
+  width: 100%;
+  height: 600px;
+  background-image: url(../Image/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
