@@ -29,3 +29,111 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#logo {
+  font-size: 80px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 45%;
+  margin-top: 7%;
+}
+
+#logo > span {
+  color: red;
+  margin-left: 25%;
+}
+
+#heading {
+  position: absolute;
+  margin-left: 26%;
+  margin-top: 22%;
+  font: normal normal 600 36px/55px Poppin;
+  color: white;
+}
+
+#dropdown {
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 28%;
+}
+
+select {
+  height: 42px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#quickSearch {
+  margin-left: 4%;
+  margin-top: 4%;
+  width: 90%;
+  display: inline-block;
+}
+
+#quickHeading {
+  font: normal normal bold 30px/46px Poppins;
+  letter-spacing: 0px;
+  color: #192f60;
+  opacity: 1;
+}
+
+#quickHeading:hover {
+  font-size: 50px;
+}
+#quickSubHeading {
+  text-align: left;
+  font: normal normal normal 22px/27px Poppins;
+  letter-spacing: 0px;
+  color: #8c96ab;
+  opacity: 1;
+}
+
+.mainTileContainer {
+  display: grid;
+  gap: 100px;
+  justify-content: start;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tileContainer {
+  float: left;
+  box-shadow: 10px 20px 15px rgb(201 184 184);
+}
+
+.tileItem1 {
+  float: left;
+}
+.tileItem1 > img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.tileHeading {
+  margin-left: 4%;
+  float: left;
+  margin-top: 5%;
+  font-size: 24px;
+}
+.tileHeading > a {
+  text-align: left;
+  font: normal normal 600 24px/27px Poppins;
+  letter-spacing: 0px;
+  color: #192f60;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.tileSubheading {
+  float: left;
+  font: normal normal normal 14px/21px Poppins;
+  letter-spacing: 0px;
+  color: #8c96ab;
+  opacity: 1;
+  margin-top: -23%;
+  margin-left: 40%;
+}
