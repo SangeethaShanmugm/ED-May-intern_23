@@ -138,3 +138,10 @@ body{
  Responsive
  Mobile-first approach
  Browser compatibility
+
+
+JavaScript
+-----------
+
+ECMA Script5 - Es5
+ECMA Script6 - Es6
