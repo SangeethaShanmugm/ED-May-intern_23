@@ -73,3 +73,6 @@ var movie = [
 
 console.log(movie);
 console.log(movie[0].name);
+
+
+

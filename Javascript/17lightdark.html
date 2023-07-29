@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light & Dark theme</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background-color: white;
+        color: black;
+      }
+      .newStyle {
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <script>
+      const changeMode = () => {
+        let mybody = document.body;
+        //The classList property returns the CSS classnames of an element.
+        mybody.classList.toggle("newStyle");
+      };
+    </script>
+  </head>
+  <body>
+    <h2>Light Dark Mode</h2>
+    <p>We are working on dark light theme</p>
+    <span class="glyphicon glyphicon-certificate" onClick="changeMode()"></span>
+  </body>
+</html>
