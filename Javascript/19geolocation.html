@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onClick="geolocation()">Geolocation</button>
+    <p id="out"></p>
+    <p id="location"></p>
+    <p id="weather"></p>
+    <script>
+      let x = document.getElementById("out");
+      let y = document.getElementById("location");
+      let z = document.getElementById("weather");
+      function geolocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition); //Callback function
+        } else {
+          x.innerText = "Geo Not supported";
+        }
+      }
+
+      function showPosition(data) {
+        console.log(data.coords.latitude);
+        console.log(data.coords.longitude);
+        let lat = data.coords.latitude;
+        let long = data.coords.longitude;
+        x.innerText = `Lat is ${lat} and Long is ${long}`;
+        //to generate api key and call => https://openweathermap.org/current
+
+        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=019c012e8e9bcdc7c84a82c0bf685c83`;
+        //api calling
+        fetch(url, { method: "GET" })
+          //return promise
+          .then((data) => data.json())
+          .then((res) => {
+            console.log("Weather data", res);
+            y.innerText = `Temp of the day is ${res.main.temp}`;
+            z.innerText = `City name is ${res.name}`;
+            // console.log("Weather data", res.name);
+            // console.log("Weather data", res.sys.country);
+          });
+      }
+    </script>
+  </body>
+</html>
+
+<!-- callback function => calling a function inside another function -->
