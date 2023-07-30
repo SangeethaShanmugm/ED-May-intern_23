@@ -145,3 +145,15 @@ JavaScript
 
 ECMA Script5 - Es5
 ECMA Script6 - Es6
+
+API => Application program Interface
+
+http methods       meaning
+GET              -> READ
+POST             -> ADDING/INSERT
+PUT              -> UPDATE
+DELETE           -> DELETE
+
+crud - create, read, update, delete
+
+
