@@ -1,3 +1,4 @@
+// callback hell
 api.createorder(cart, function () {
   api.proceedPayment(function () {
     api.makePayment(function () {
