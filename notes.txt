@@ -157,3 +157,26 @@ DELETE           -> DELETE
 crud - create, read, update, delete
 
 
+
+Package.json
+---------------
+
+> starting point of our app
+> It contains all the package we require
+> It also contains script to run the app
+> Meta data(description of our app)
+
+Steps to generate package.json
+------------------------------
+
+> Node js must be installed in laptop => start => cmd => node -v => to check node version 
+> go inside the folder where you want the node app /go inside folder using cmd
+> npm init -> initialization
+> Answer all the question => just click enter
+> Type "yes
+
+//install mongodb  => https://www.mongodb.com/try/download/community
+> open mongo shell => cmd => mongo
+=> show dbs  => list all db
+=> use ed-may-intern => create and switch to particular dbName
+> db => current dbName
