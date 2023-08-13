@@ -180,3 +180,70 @@ Steps to generate package.json
 => show dbs  => list all db
 => use ed-may-intern => create and switch to particular dbName
 > db => current dbName
+
+
+MongoDB -> Non - relational Db -> no structure -> wont follow any schema
+---------
+
+Table -> collection
+rows -> document -> {}
+columns -> key,fields
+
+id	name	       artist
+1	Baahubali	prabhas
+1	Baahubali	Anushka
+1	Baahubali	Rana         null
+2	Tennet	        John       null
+2	Tennet	      Robert    tennet@gmail.com
+
+
+[
+  {
+    "id": 1,
+    "name": "Baahubali",
+    "artist": "prabhas"
+  },
+  {
+    "id": 1,
+    "name": "Baahubali",
+    "artist": "Anushka"
+  },
+  {
+    "id": 1,
+    "name": "Baahubali",
+    "artist": "Rana"
+  },
+  {
+    "id": 2,
+    "name": "Tennet",
+    "artist": "John"
+  },
+  {
+    "id": 2,
+    "name": "Tennet",
+    "artist": "Robert"
+  }
+]
+
+>> Schema -> blueprint of your data / table structure
+>> Flexible Schema    =>   normal schema, different key, extra key
+  [
+    {
+    name: "jack",
+    age:20
+  },
+  {
+    name: "John",
+    age:30
+    city:"Bangalore"
+  },
+  {
+    name: "Peter",
+    age:30
+   country:"India"
+  }
+  ]
+  >> mongodb store data in BSON format -> Binary json(smart and efficient way of store)
+  >> retrive -> json format
+
+  
