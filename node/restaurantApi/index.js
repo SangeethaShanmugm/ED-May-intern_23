@@ -4,6 +4,7 @@ const MongoClient = mongo.MongoClient;
 const app = express();
 const PORT = 5000;
 const MONGO_URL = "mongodb://127.0.0.1:27017";
+app.use(express.json()); //Inbuilt middleware
 //"mongodb://localhost:27017"
 let db;
 //Array of objects
@@ -253,6 +254,59 @@ app.post("/menuItem", express.json(), function (req, res) {
   } else {
     res.send("Invalid Input");
   }
+});
+
+//place orders
+
+app.post("/placeorder", function (req, res) {
+  console.log(req.body);
+  db.collection("orders").insertOne(req.body, (err, result) => {
+    if (err) throw err;
+    res.send("Order Placed!!!");
+  });
+});
+
+//get orders
+app.get("/orders", function (req, res) {
+  let query = {};
+  let email = req.query.email;
+  if (email) {
+    query = { email };
+  }
+  db.collection("orders")
+    .find(query)
+    .toArray((err, result) => {
+      if (err) throw err;
+      res.send(result);
+    });
+});
+
+//Update payment details
+app.put("/updateOrder/:id", function (req, res) {
+  let oid = Number(req.params.id);
+  db.collection("orders").updateOne(
+    { orderId: oid },
+    {
+      $set: {
+        status: req.body.status,
+        bank_name: req.body.bank_name,
+        date: req.body.date,
+      },
+    },
+    (err, result) => {
+      if (err) throw err;
+      res.send("Order updated successfully");
+    }
+  );
+});
+
+//delete orders
+app.delete("/deleteOrder/:id", function (req, res) {
+  let oid = Number(req.params.id);
+  db.collection("orders").deleteOne({ orderId: oid }, (err, result) => {
+    if (err) throw err;
+    res.send("Order deleted successfully");
+  });
 });
 
 //Mongodb connection

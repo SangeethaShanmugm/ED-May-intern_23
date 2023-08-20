@@ -49,15 +49,30 @@ http://localhost:5000/menuItem
 
 PlaceOrder (POST)
 
+http://localhost:5000/placeorder
+
 ## Page 5
 
 List of orders
 
+http://localhost:5000/orders
+
 List of orders wrt to email
+
+http://localhost:5000/orders?email=jack@gmail.com
 
 Update payment details (PUT)
 
+http://localhost:5000/updateOrder/1
+
+{
+"status": "Delivered",
+"bank_name": "HDFC",
+"date": "20/8/2023"
+}
+
 delete orders (DELETE)
+http://localhost:5000/deleteOrder/3
 
 CRUD
 C - Create - POST
