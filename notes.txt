@@ -38,7 +38,7 @@ Extension for vs code
 > githistory
 
 
-Frontend - 1(website)
+Frontend - 1(website) => static website
 ----------------
 HTML  - raw structure- static
 CSS - look and feel(Design) - static
@@ -48,7 +48,7 @@ Javascript  - dynamic
 Frontend - 2(web-apps)
 ---------------
 
-React - dynamic
+React - dynamic website
 
 Backend
 -----------
@@ -246,4 +246,34 @@ id	name	       artist
   >> mongodb store data in BSON format -> Binary json(smart and efficient way of store)
   >> retrive -> json format
 
+  React => dynamic web application 
+
+> library => JS (Fb SD => Jordan )
+
+2 types of components
+1. Class component  
+  > Logical component  
+  > Logics like calling api, display, complex Logics
+  > we can maintain the state
+
   
+2. Functional component
+ > Dumb component
+ > display is only purpose
+ > we cannot maintain a state
+
+Steps to generate react app
+----------------------------
+1. create a folder 
+2. navigate to folder 
+3. npx create-react-app appname
+
+
+react  -> main package 
+react-dom -> help us to display(render) the content in Browser
+react-scripts => this will help us to run the app
+
+
+
+  features
+  ---------

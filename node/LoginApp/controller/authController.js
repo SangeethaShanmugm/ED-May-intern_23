@@ -1,9 +1,11 @@
 const express = require("express");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const router = express.Router();
 const User = require("../model/userModel");
 const bodyParser = require("body-parser");
-
+const jwt = require("jsonwebtoken");
+var _ = require("lodash");
+const config = require("../config");
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
 
@@ -24,6 +26,22 @@ router.post("/register", (req, res) => {
       res.send("Registration Successful!");
     }
   );
+});
+
+router.post("/login", (req, res) => {
+  User.findOne({ email: req.body.email }, (err, user) => {
+    if (err) return res.send({ auth: false, token: "Error while logging" });
+    if (!user) return res.send({ auth: false, token: "Invalid credentials" });
+    else {
+      const passIsValid = bcrypt.compareSync(req.body.password, user.password);
+      if (!passIsValid)
+        return res.send({ auth: false, token: "Invalid credentials" });
+      let token = jwt.sign({ id: user._id }, config.secret, {
+        expiresIn: 86400, //24 hours -> in sec
+      });
+      res.send({auth: true, token: token});
+    }
+  });
 });
 
 module.exports = router;
